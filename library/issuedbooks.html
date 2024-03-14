@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            width:600px;
+            margin:50px auto;
+        }
+        label,input{
+            margin:10px;
+            padding:10px;
+        }
+        body{
+            background-color: rgb(31, 39, 95);
+            color:white;
+        }
+        input{
+            width:70%;
+        }
+        #butt{
+            margin:15px;
+            padding:13px;
+            background-color: rgb(74, 155, 227);
+            color:white;
+            border-radius: 30px;
+            border:none;
+            font-size: 25px;
+            width:20%;
+        }
+        #bton{
+            text-align: center;
+            width: 50%;
+            padding:7px;
+        }
+        #btn{
+            position: fixed;
+            bottom:35px;
+            left:650px;
+            background-color: black;
+            color:white;
+            padding: 15px;
+            border-radius: 40px;
+            border:none;
+            font-size: medium;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+    </style>
+    <h2 style="text-align: center;margin-right: 5%;">Welcome Admin!! Here you can add the books issued to the students</h2>
+    <div class="container">
+        <div class="title">
+            <label><b>Title of the book</b></label><br>
+            <input id="booktitle" type="text" placeholder="Enter title of the book">
+        </div>
+        <div class="author">
+            <label><b>Author Name</b></label><br>
+            <input type="text" id="bookauthor" placeholder="Enter author name">
+        </div>
+        <div class="Student Name">
+            <label><b>Student Name</b></label><br>
+            <input type="text" id="studtname" placeholder="Enter student name">
+        </div>
+       
+       
+        <div class="copies">
+            <label><b>Copy</b></label><br>
+            <input type="text" id="quantity" placeholder="Enter quantity">
+        </div>
+        <div class="btn">
+            <button id="butt" onclick="submit()" type="submit">Submit</button>
+        </div>
+    </div>
+    <forms>
+        <table border="1" class="container" id="show">
+            <thead>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Student Name</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </forms>
+    <script src="script1.js"></script>
+     <div id="btn">
+        <a href="index.html">Back to Home</a>
+    </div>
+    
+    
+</body>
+</html>
